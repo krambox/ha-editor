@@ -7,7 +7,7 @@ let fs = require('fs');
 let bodyParser = require('body-parser');
 
 //The root folder for homeassistant config files.
-let baseDir = "configFolder"
+let baseDir = "/Users/kai/dev/mqtt-scripts-host/scripts"
 
 
 //Function to load a file from disk and return it
@@ -29,7 +29,7 @@ function getDir(dirPath, fn){
                 if(element.includes(".yaml")){
                     tempFiles.push(element);
                 }
-                else if(element.includes(".py")){
+                else if(element.includes(".js")){
                     tempFiles.push(element);
                 }
                 else if(!element.includes(".")){

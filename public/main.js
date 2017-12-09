@@ -27,7 +27,7 @@ function loadFile(fileName){
             
             // The result can be accessed through the `m`-variable.
             m.forEach((match, groupIndex) => {
-                if(match == ".py"){
+                if(match == ".js"){
                     monaco.editor.setModelLanguage(editor.getModel(), "python")
                     console.log("Changed to python");
                 }
